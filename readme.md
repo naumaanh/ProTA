@@ -6,9 +6,9 @@ CSCE 4444 Software Engineering
 
 
 ## Important Dates
-- [ ] 9/14 - Proposal Presentation
-- [ ] 9/21 - Requirements Elicitation Workshop
-- [ ] 10/12 - Peer Review (Deliverable II)
-- [ ] 11/16 - Code Inspection
-- [ ] 11/28 & 11/30 - Project Presentation & Demo
-- [ ] 12/5 - Usability Testing
+- [ ] Proposal Presentation 9/14
+- [ ] Requirements Elicitation Workshop 9/21
+- [ ] Peer Review (Deliverable II) 10/12
+- [ ] Code Inspection 11/16
+- [ ] Project Presentation & Demo 11/28 & 11/30
+- [ ] Usability Testing 12/5
