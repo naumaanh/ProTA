@@ -11,9 +11,17 @@ off roll sheets and dread mispronouncing students names, now there is a way to b
 
 
 ## Important Dates
+#### September
 - [ ] Proposal Presentation 9/14
 - [ ] Requirements Elicitation Workshop 9/21
+
+#### October
 - [ ] Peer Review (Deliverable II) 10/12
+
+#### November
 - [ ] Code Inspection 11/16
 - [ ] Project Presentation & Demo 11/28 & 11/30
+
+#### December
 - [ ] Usability Testing 12/5
+
