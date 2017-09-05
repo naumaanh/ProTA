@@ -1,14 +1,6 @@
-Project Neme: Pro TA
-Group Name: Pro TA 
-Group Members: Naumaan Hassan 
 
-Project Description: Pro TA endeavors to bring taking attendence to the twenty first century. No longer do you have to read 
-off roll sheets and dread mispronouncing students names, now there is a way to be able to adress that concern. 
+# Top 5 Risks
 
-
-
-
-Top 5 Risks: 
 1. Issue with the card reader and Android display device, including, but not limited to poor handling of the device. 
   -Take proper care of it, don't dunk it in water, etc 
   -Posssible create some sort of carrying case to prevent it from damage
