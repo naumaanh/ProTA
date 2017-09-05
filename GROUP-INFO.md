@@ -1,6 +1,12 @@
 # Group Info
-Created by Manuel Vargas
+File created by Manuel Vargas
 
 ## Members
 
 [Manuel Vargas](#)
+
+`/* put you names here */`
+
+[Hyunsook Do](#)(Professor)
+
+[Phani Vege](#)(TA)
