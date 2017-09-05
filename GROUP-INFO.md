@@ -7,6 +7,8 @@ File created by Manuel Vargas
 
 [Nicolas Stencel](#)
 
+[Naumaan Hassan] (#)
+
 `/* put you names here */`
 
 [Hyunsook Do](#)(Professor)
