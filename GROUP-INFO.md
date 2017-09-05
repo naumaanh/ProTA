@@ -7,7 +7,7 @@ File created by Manuel Vargas
 
 [Nicolas Stencel](#)
 
-[Naumaan Hassan] (#)
+[Naumaan Hassan](#)
 
 `/* put you names here */`
 
