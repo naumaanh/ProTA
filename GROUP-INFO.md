@@ -11,6 +11,7 @@ File created by Manuel Vargas
 
 `/* put you names here */`
 
-[Hyunsook Do](#)(Professor)
+------
+[Hyunsook Do](#) (Professor)
 
-[Phani Vege](#)(TA)
+[Phani Vege](#) (TA)
