@@ -3,7 +3,8 @@ File created by Manuel Vargas
 
 ## Members
 
-[Manuel Vargas](#)
+[Manuel Vargas](#) 
+
 [Nicolas Stencel](#)
 
 `/* put you names here */`
