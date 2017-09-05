@@ -1,5 +1,6 @@
 # Group Project
 CSCE 4444 Software Engineering 
+### [GROUP-INFO file](https://github.com/ManuelVargas1251/CSCE-4444-Group-Project/blob/master/GROUP-INFO.md)
 
 ## Members
 [Keenan Jabri](#) | [Naumaan Hassan](#) | [Nicolas Stencel](#) | [Manuel Vargas](#)
