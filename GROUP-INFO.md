@@ -11,8 +11,6 @@ File created by Manuel Vargas
 
 [Keenan Jabri](#)
 
-`/* put you names here */`
-
 ------
 [Hyunsook Do](#) (Professor)
 
