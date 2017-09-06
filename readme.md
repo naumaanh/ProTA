@@ -7,7 +7,7 @@ Pro TA endeavors to bring taking attendence to the twenty first century. No long
 off roll sheets and dread mispronouncing students names, now there is a way to be able to adress that concern. 
 
 ## Members
-[Keenan Jabri](#) | [Naumaan Hassan](#) | [Nicolas Stencel](#) | [Manuel Vargas](#)
+ [Keenan Jabri](#) | [Naumaan Hassan](#) | [Nicolas Stencel](#) | [Manuel Vargas](#)
 
 
 ## Important Dates
