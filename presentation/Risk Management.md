@@ -5,3 +5,6 @@
   -Take proper care of it, don't dunk it in water, etc 
   -Posssible create some sort of carrying case to prevent it from damage
   -In the event that the card reader becomes defective, we will have already prucahsed a second card reader to work as a backup.  
+
+2. Android tablet application not functioning properly
+  -
