@@ -1,4 +1,4 @@
-# Group Info
+# Pro TA - Group Info
 File created by Manuel Vargas
 
 ## Members
