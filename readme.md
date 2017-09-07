@@ -12,6 +12,10 @@ off roll sheets and dread mispronouncing students names, now there is a way to b
 
 ## Important Dates
 #### September
+- [x] Assignment 1 - Create Repository 9/6
+- [ ] Deliverable 1  - Project Proposal 9/13
+ - Project Plan
+ - Risk Management
 - [ ] Proposal Presentation 9/14
 - [ ] Requirements Elicitation Workshop 9/21
 
