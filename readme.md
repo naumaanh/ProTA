@@ -12,17 +12,18 @@ off roll sheets and dread mispronouncing students names, now there is a way to b
 
 ## Important Dates
 #### September
-- [x] Assignment 1 - Create Repository 9/6
-- [ ] Deliverable 1  - Project Proposal 9/13
+- [x] Assignment I - Create Repository 9/6
+- [ ] Deliverable I - Project Proposal (7% of final grade)
  - Project Plan
  - Risk Management
 - [ ] Proposal Presentation 9/14
 - [ ] Requirements Elicitation Workshop 9/21
 
 #### October
-- [ ] Peer Review (Deliverable II) 10/12
+- [ ] Deliverable II - Peer Review 10/12 (13% of final grade)
 
 #### November
+- [ ] Deliverable III - Implenting & Testing 11/3 (20% of final grade)
 - [ ] Code Inspection 11/16
 - [ ] Project Presentation & Demo 11/28 & 11/30
 
