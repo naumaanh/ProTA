@@ -1,6 +1,15 @@
 # Group Project: Pro TA
 CSCE 4444 Software Engineering 
-### [GROUP-INFO file](https://github.com/ManuelVargas1251/CSCE-4444-Group-Project/blob/master/GROUP-INFO.md)
+
+## Directory Structure
+
+-- README.md
+
+-- GROUP-INFO.md
+
+--documents
+
+|
 
 ## Project Description
 Pro TA endeavors to bring education and attendance into the twenty first century. No longer do you have to read 
