@@ -5,3 +5,6 @@
 ## Meeting 2: September 7th, 2017 || 2:30 PM – 3:50 PM
 ***Attendees***: Nicolas Stencel, Manuel Vargas, Naumaan Hassan <br />
 ***Things Discussed***: During this meeting we got clarification as to what exactly we needed to provide on our Deliverable I, as well as how we would structure it in our GitHub repository. We also divided the points we needed to hit between ourselves and gave everybody a due date as to when these tasks needed to be accomplished. We were continuing to lay the groundwork, and also had talk about potential logo ideas.
+
+# Gannt Chart
+![gantt chart](https://user-images.githubusercontent.com/31670750/30253705-39f265ee-9650-11e7-86b3-ad875e992736.JPG)
