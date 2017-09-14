@@ -9,7 +9,7 @@ University of North Texas, CSCE 4444 Software Engineering Group Project
 [Keenan Jabri](#) | [Naumaan Hassan](#) | [Nicolas Stencel](#) | [Manuel Vargas](#)
 
 ## Directory Structure
-In our main directory there are two loose files: **readme.me** & **group-info.md**. Our readme contains general information about our project. We then have two folders: **documents** & **source**. Documents will house all of our deliverables as well as meeting minutes along with any other extra files we may have.
+In our main directory there are three text files and two folders. **`/documents`** houses our deliverables and **`/source`** will contain the solution.
 
 ![directory structure](documents/other/directory_structure.png)
 
