@@ -1,17 +1,22 @@
-# Group Project: Pro TA
-CSCE 4444 Software Engineering 
+<!-- using shields.io for status buttons -->
+![Programming Language](https://img.shields.io/badge/Language-Javascript-blue.svg)
+![Status](https://img.shields.io/badge/Version-0.0.1-brightgreen.svg)
+
+
+# Pro TA
+University of North Texas, CSCE 4444 Software Engineering Group Project 
 ### Members
 [Keenan Jabri](#) | [Naumaan Hassan](#) | [Nicolas Stencel](#) | [Manuel Vargas](#)
 
 ## Directory Structure
 In our main directory there are two loose files: **readme.me** & **group-info.md**. Our readme contains general information about our project. We then have two folders: **documents** & **source**. Documents will house all of our deliverables as well as meeting minutes along with any other extra files we may have.
-![directory structure](documents/other/directory_structure.png)
 
+![directory structure](documents/other/directory_structure.png)
 
 ## Important Dates
 #### September
 - [x] Assignment I - Create Repository 9/6
-- [ ] Deliverable I - Project Proposal 9/13 (**7% of final grade**)
+- [x] Deliverable I - Project Proposal 9/13 (**7% of final grade**)
    - Project Plan
    - Risk Management
 - [ ] Proposal Presentation 9/14
