@@ -1,6 +1,6 @@
 <!-- using shields.io for status buttons -->
 ![Programming Language](https://img.shields.io/badge/Language-Javascript-blue.svg)
-![Status](https://img.shields.io/badge/Version-0.0.1-brightgreen.svg)
+![Status](https://img.shields.io/badge/Version-0.0.2-brightgreen.svg)
 
 
 # Pro TA
@@ -19,11 +19,12 @@ In our main directory there are three text files and two folders. **`/documents`
 - [x] Deliverable I - Project Proposal 9/13 (**7% of final grade**)
    - Project Plan
    - Risk Management
-- [ ] Proposal Presentation 9/14
-- [ ] Requirements Elicitation Workshop 9/21
+- [x] Proposal Presentation 9/14
+- [x] Requirements Elicitation Workshop 9/21
 
 #### October
-- [ ] Deliverable II - Peer Review 10/12 (**13% of final grade**)
+- [x] Deliverable II - 10/10 (**13% of final grade**)
+- [ ] Deliverable II - Peer Review 10/12
 
 #### November
 - [ ] Deliverable III - Implenting & Testing 11/3 (**20% of final grade**)
