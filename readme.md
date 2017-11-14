@@ -4,7 +4,8 @@
 
 
 # Pro TA
-University of North Texas, CSCE 4444 Software Engineering Group Project 
+University of North Texas, CSCE 4444 Software Engineering Group Project
+
 ### Members
 [Keenan Jabri](#) | [Naumaan Hassan](#) | [Nicolas Stencel](#) | [Manuel Vargas](#)
 
@@ -24,11 +25,11 @@ In our main directory there are three text files and two folders. **`/documents`
 
 #### October
 - [x] Deliverable II - 10/10 (**13% of final grade**)
-- [ ] Deliverable II - Peer Review 10/12
+- [x] Deliverable II - Peer Review 10/12
 
 #### November
-- [ ] Deliverable III - Implenting & Testing 11/3 (**20% of final grade**)
-- [ ] Code Inspection 11/16
+- [x] Code Inspection 11/13
+- [ ] Deliverable III - Implenting & Testing 11/27 (**20% of final grade**)
 - [ ] Project Presentation & Demo 11/28 & 11/30
 
 #### December
