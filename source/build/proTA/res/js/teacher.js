@@ -1,4 +1,6 @@
+//Teacher Class
 class Teacher {
+  //name is needed to identify teacher
   constructor(name) {
     this.name = name;
   }
