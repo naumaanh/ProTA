@@ -1,6 +1,6 @@
-//Teacher Class
+//Student Class
 class Teacher {
-  //name is needed to identify teacher
+  //name is needed to identify Student
   constructor(name) {
     this.name = name;
   }
@@ -19,7 +19,7 @@ class Teacher {
 }
 
 
-//instance of teacher class
-let teacher1 = new Teacher("Mr. Price");
+//instance of Student class
+let Teacher1 = new Teacher("Mr. Price");
 
-teacher1.newClass();
+Teacher1.newClass();
