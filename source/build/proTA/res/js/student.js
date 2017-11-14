@@ -6,14 +6,14 @@ class Student {
     this.id = id;
   }
   
-  checkIn(){
-    console.log("Student "+ this.name + " just checked in.");
+  checkIn(date){
+    console.log("Student "+ this.name + " just checked in on" + date);
   }
 
 }
 
 
 //instance of Student class
-let Student1 = new Student("Mr. Price");
+let Student1 = new Student("James Taylor");
 
-Student1.newClass();
+Student1.checkIn("11-14-17");
