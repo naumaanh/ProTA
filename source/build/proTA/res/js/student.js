@@ -1,13 +1,13 @@
 //Student Class
 class Student {
   //name is needed to identify Student
-  constructor(name,id) {
+  constructor(name, id) {
     this.name = name;
     this.id = id;
   }
-  
+
   checkIn(date){
-    console.log("Student "+ this.name + " just checked in on" + date);
+    console.log("Student "+ this.name + " just checked in on " + date);
   }
 
 }

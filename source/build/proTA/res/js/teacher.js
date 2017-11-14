@@ -1,4 +1,4 @@
-//Student Class
+//Teacher Class
 class Teacher {
   //name is needed to identify Student
   constructor(name) {
