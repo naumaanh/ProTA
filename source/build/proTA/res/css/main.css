@@ -1,0 +1,12 @@
+.navbar, .subnavbar, .toolbar, .searchbar {
+    background: #ff5722;
+}
+.navbar .right i {
+    margin: 0 10px;
+}
+.navbar-inner {
+    overflow: visible;
+}
+.navbar-fixed .navbar {
+    box-shadow: none;
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.prota.prota.mobile" versionCode="22" version="1.2.10">
+
+		<name>Pro TA</name>
+
+		<description>
+			An app to make teachers and students life easier.
+		</description>
+
+		<author email="kzane1111@gmail.com">
+			Keenan
+		</author>
+
+		
+		<preference name="android-targetSdkVersion" value="21" />
+
+		<supports-screens android:anyDensity="true" android:resizeable="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+
+		<config-file platform="android" parent="/manifest" mode="merge">
+			<application android:debuggable="true" />
+		</config-file>
+
+		<gap:config-file platform="ios" parent="LSApplicationQueriesSchemes" mode="replace">
+			<array>
+				<string>fb</string>
+				<string>twitter</string>
+				<string>gplus</string>
+				<string>pintrest</string>
+				<string>instagram</string>
+				<string>youtube</string>
+				<string>yelp</string>
+				<string>linkedin</string>
+				<string>tumblr</string>
+				<string>whatsapp</string>
+				<string>snapchat</string>
+				<string>onedrive</string>
+				<string>comgooglemaps</string>
+				<string>amazon</string>
+				<string>skype</string>
+				<string>googledrive</string>
+				<string>itms-apps</string>
+				<string>tel</string>
+				<string>mailto</string>
+				<string>uber</string> 
+				<string>lyft</string>
+			  <string>fbapi</string>
+        <string>fbauth</string>
+        <string>fbauth2</string>
+			</array>
+		</gap:config-file>
+
+		<access origin="*" />
+		<access origin="cdvfile://*" />
+		<access origin="https://youtube.com" launch-external="yes" />
+		<allow-intent href="tel:*" />
+		<allow-intent href="geo:*" />
+		<allow-intent href="sms:*" />
+		<allow-intent href="fb:*" />
+		<allow-navigation href="http://*/*" />
+		<allow-navigation href="https://*/*" />
+		<access origin="mailto:*" launch-external="yes" />
+		<access origin="tel:*" launch-external="yes" />
+		<!--
+If you do not want any permissions to be added to your app, add the
+following tag to your config.xml; you will still have the INTERNET
+permission on your app, which PhoneGap requires.
+-->
+		<preference name="permissions" value="none" />
+		<preference name="CrosswalkAnimatable" value="true" />
+		<!-- Customize your app and platform with the preference element. -->
+		<preference name="orientation" value="all" />
+		<!-- all: default means both landscape and portrait are enabled -->
+		<preference name="target-device" value="universal" />
+		<!-- all: possible values handset, tablet, or universal -->
+		<preference name="fullscreen" value="true" />
+		<!-- all: hides the status bar at the top of the screen -->
+		<preference name="webviewbounce" value="false" />
+		<!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+		<preference name="prerendered-icon" value="false" />
+		<!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+		<preference name="stay-in-webview" value="false" />
+		<!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+		<preference name="StatusBarOverlaysWebView" value="true" />
+		<preference name="StatusBarBackgroundColor" value="#ffffff" />
+		<preference name="StatusBarStyle" value="lightcontent" />
+		<preference name="detect-data-types" value="true" />
+		<!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+		<preference name="exit-on-suspend" value="false" />
+		<!-- ios: if set to true, app will terminate when home button is pressed -->
+		<preference name="show-splash-screen-spinner" value="false" />
+		<!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+		<preference name="auto-hide-splash-screen" value="false" />
+		<!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+		<preference name="disable-cursor" value="false" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="false" />
+		<!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+		<preference name="android-minSdkVersion" value="16" />
+		<!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+		<preference name="android-installLocation" value="auto" />
+		<!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+		<preference name="android-build-tool" value="gradle" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="FadeSplashScreenDuration" value="300" />
+
+		<platform name="ios">
+			<preference name="phonegap-version" value="cli-5.4.1" />
+			<preference name="deployment-target" value="8.0" />
+		</platform>
+		<platform name="android">
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+			<preference name="phonegap-version" value="cli-6.3.0" />
+			<preference name="xwalkMultipleApk" value="true" />        
+			<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
+			<preference name="xwalkVersion" value="org.xwalk:xwalk_core_library:22+" />
+			<preference name="orientation" value="all" />
+			<preference name="fullscreen" value="false" />
+			<preference name="StatusBarBackgroundColor" value="#989898" />
+			<preference name="StatusBarStyle" value="lightcontent" />
+			<preference name="android-windowSoftInputMode" value="adjustPan" />
+			<preference name="SplashScreenDelay" value="100000" />
+		</platform>
+		<!-- iPhone 6 / 6+ -->
+		<icon src="icon.png" />
+
+
+		<icon src="icon-60@3x.png" platform="ios" width="180" height="180" />
+
+		<!-- iPhone / iPod Touch  -->
+		<icon src="icon-60.png" platform="ios" width="60" height="60" />
+		<icon src="icon-60@2x.png" platform="ios" width="120" height="120" />
+
+		<!-- iPad -->
+		<icon src="icon-76.png" gap:platform="ios" width="76" height="76" />
+		<icon src="icon-72.png" gap:platform="ios" width="72" height="72" />
+		<icon src="icon-72-2x.png" gap:platform="ios" width="144" height="144" />
+		<icon src="icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+
+		<!-- Settings Icon -->
+		<icon src="icon-small.png" platform="ios" width="29" height="29" />
+		<icon src="icon-small@2x.png" platform="ios" width="58" height="58" />
+		<icon src="icon.png" gap:platform="ios" width="57" height="57" />
+
+		<!-- Spotlight Icon -->
+		<icon src="icon-40.png" platform="ios" width="40" height="40" />
+		<icon src="icon-76.png" platform="ios" width="80" height="80" />
+
+
+		<splash src="splash.png" />
+
+		<splash src="Default.png" platform="ios" width="320" height="480" />
+		<splash src="Default@2x.png" platform="ios" width="640" height="960" />
+
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<splash src="Default-568h@2x.png" platform="ios" width="640" height="1136" />
+
+		<!-- iPhone 6 -->
+		<splash src="Default-667h@2x.png" platform="ios" width="750" height="1334" />
+		<splash src="Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+		<splash src="Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
+
+		<!-- iPad -->
+		<splash src="Default-Portrait.png" platform="ios" width="768" height="1024" />
+		<splash src="Default-Landscape.png" platform="ios" width="1024" height="768" />
+
+		<!-- Retina iPad -->
+		<splash src="Default-portrait-2x.png" platform="ios" width="1536" height="2048" />
+		<splash src="Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
+
+
+		<icon src="ldpi.png" platform="android" qualifier="ldpi" />
+		<icon src="mdpi.png" platform="android" qualifier="mdpi" />
+		<icon src="hdpi.png" platform="android" qualifier="hdpi" />
+		<icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
+		<icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
+		<icon src="xxxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
+
+
+
+		<gap:splash src="screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
+		<gap:splash src="screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+		<gap:splash src="screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+		<gap:splash src="screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+		<gap:splash src="screen-xhdpi-portrait.png" gap:platform="android" gap:density="xxhdpi" />
+
+		<gap:plugin name="cordova-plugin-wkwebview" source="npm" />
+		
+		<plugin name="cordova-plugin-crosswalk-webview" version="1.8.0"/>	
+		<gap:plugin name="cordova-plugin-splashscreen" source="npm" />
+		<gap:plugin name="cordova-plugin-cache" source="npm" />
+		<gap:plugin name="phonegap-plugin-barcodescanner-ld" source="npm" />
+		<gap:plugin name="cordova-plugin-safariviewcontroller" source="npm" />
+		<plugin spec="https://github.com/Telerik-Verified-Plugins/ImagePicker" source="git" />
+		<gap:plugin name="cordova-plugin-screen-orientation" source="npm" />
+		<gap:plugin name="cordova-plugin-camera" source="npm" />
+		<gap:plugin name="cordova-plugin-contacts" source="npm" />
+		<gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
+		<gap:plugin name="cordova-pdf-generator" source="npm" />
+		<gap:plugin name="cordova-plugin-media-capture" source="npm" />
+		<gap:plugin name="cordova-plugin-3dtouch" source="npm" />
+		<gap:plugin name="cordova-plugin-network-information" source="npm" />
+		<gap:plugin name="cordova-plugin-calendar" source="npm" />
+		<gap:plugin name="cordova-plugin-statusbar" source="npm" />
+		<gap:plugin name="com.telerik.plugins.nativepagetransitions" source="npm" />
+		<gap:plugin name="cordova-universal-clipboard" source="npm" />
+		<gap:plugin name="cordova-plugin-themeablebrowser" source="npm" />
+		<gap:plugin name="cordova-plugin-inappbrowser" source="npm" />
+		<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+			<param name="URL_SCHEME" value="prota" />
+		</gap:plugin>
+		<gap:plugin name="cordova-plugin-file" source="npm" />
+		<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+		<gap:plugin name="ionic-plugin-keyboard" source="npm" />
+		<gap:plugin name="cordova-plugin-device" source="npm" />
+		
+		<gap:plugin name="cordova-plugin-geolocation" source="npm" />
+		<gap:plugin name="cordova-save-image-ios-android" source="npm" />
+		
+	</widget>
