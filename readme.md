@@ -1,6 +1,6 @@
 <!-- using shields.io for status buttons -->
 ![Programming Language](https://img.shields.io/badge/Language-Javascript-blue.svg)
-![Status](https://img.shields.io/badge/Version-0.0.2-brightgreen.svg)
+![Status](https://img.shields.io/badge/Version-0.2.86-brightgreen.svg)
 
 
 # Pro TA
