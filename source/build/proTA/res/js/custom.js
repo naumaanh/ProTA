@@ -22,6 +22,7 @@ $(document).ready(function(){
 		}
 	});
 
+	//same thing as above but using click plus sign icon, instead of enter button
 	$("#addClass").click(function(){
 		let mytext = $("#searchbox").val();
 		console.log(mytext);
