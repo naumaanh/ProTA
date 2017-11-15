@@ -1,7 +1,12 @@
 class Class {
-  constructor (name) {
+  constructor (name, time) {
     this.name = name;
+    this.time = time;
   }
-  var startTime; // 11:00 AM
-  var endTime;  // 11:15 AM
+  getTime() {
+      console.log (this.time);
+  }
 }
+
+let Class1 = new Class ("CSCE 4444", "11:00 AM");
+Class1.getTime();
