@@ -15,11 +15,26 @@ $(document).ready(function(){
 			//now we can make a new class for the new class
 			var newClass = new Class(mytext);
 			newClass.ready();
-			
+
 			//add it to our array of teacher classes
 			Teacher1.addClass(newClass);
 
 		}
 	});
+
+	$("#addClass").click(function(){
+		let mytext = $("#searchbox").val();
+		console.log(mytext);
+
+		//now we can make a new class for the new class
+		var newClass = new Class(mytext);
+		newClass.ready();
+
+		//add it to our array of teacher classes
+		Teacher1.addClass(newClass);
+	});
+
+
+
 
 });
