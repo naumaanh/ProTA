@@ -4,7 +4,11 @@ class Class {
     this.time = time;
   }
   getTime() {
-      console.log (this.time);
+    console.log (this.time);
+  }
+
+  ready(){
+    console.log(this.name + " is ready.");
   }
 }
 
