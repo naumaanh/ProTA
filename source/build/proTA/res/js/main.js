@@ -26,7 +26,7 @@ var pro = {
 	},
 
 	initEventHandlers: function(){
-		pro.$view.on( 'click', '[pro-click]', function( e ){
+		$(document.body).on( 'click', '[pro-click]', function( e ){
 			$elem = $(this);
 			e.stopPropagation();
 			var toCall = $elem.attr( 'pro-click' ).replace( /\(.*?\)/, '' );
@@ -94,6 +94,10 @@ var pro = {
 		myApp.popup( pro.$view.find(id).html() );
 	},
 
+  closePopup: function( popup ){
+    myApp.closeModal( popup );
+  },
+
 	initSearchBar: function(){
 		var mySearchbar = myApp.searchbar('.searchbar', {
 			searchList: '.list-block-search',
@@ -105,35 +109,48 @@ var pro = {
 
 
 	//course class
-	course: {
-		courses: [],
-		listItemTemplate: '<li></li>',
+  course: {
+      courses: [],
+      listItemTemplate: '<li></li>',
 
-		addCourse: function( div ){
-			var jsonObj = pro.toJSON( div );
-			pro.course.courses.push( jsonObj );
-			$('.page').data(pro.course.courses);
-		},
+      addCourse: function( div ){
+        console.log('test');
+        div = div ? div : this;
+        var jsonObj = pro.toJSON( div );
+        pro.course.courses.push( jsonObj );
+        $('.page').data(pro.course.courses);
+      },
 
-		listCourses: function(){
-			var page = this;
-			var jsonObj = page.data();
-			$.each( jsonObj, function(){
-				page.append( pro.course.listItem( this ) );
-			});
-		},
+      listCourses: function(){
+        var page = this;
+        var jsonObj = page.data();
+        $.each( jsonObj, function(){
+          page.append( pro.course.listItem( this ) );
+        });
+      },
 
-		listItem: function( $elem ){
-			return $(this.listItemTemplate).clone().text( $elem.courseName ).data( $elem.courseInstances );
-		},
+      listItem: function( $elem ){
+        return $(this.listItemTemplate).clone().text( $elem.courseName ).data( $elem.courseInstances );
+      },
 
-	},
+    },
+
+    toJSON: function( $elem ){
+      var inputs = $elem.closest('.popup').find('input');
+      var jsonObj = {};
+      inputs.each( function(){
+        var input = $(this);
+        jsonObj[ input.attr('name') ] = input.val();
+      });
+      pro.closePopup( $elem.closest('.popup') );
+      return jsonObj;
+    },
 
 	//student class
 	student: {
 
 		checkIn: function(date){
-			//push date into student checkin array	
+			//push date into student checkin array
 		}
 
 

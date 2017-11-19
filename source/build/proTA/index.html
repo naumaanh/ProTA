@@ -43,9 +43,7 @@
           <div data-page="home" class="page">
             <div class="navbar">
               <div class="navbar-inner navbar-on-center">
-                <div class="left">
-                </div>
-                <div class="left" style="margin-left:10px;">ProTa</div>
+                <div class="center">ProTa</div>
                 <div class="right"><i id="addClass"  class="icon icon-plus" pro-click="pro.openPopup" popup-id="#class-builder" name="addClass"></i></div>
               </div>
             </div>
@@ -256,7 +254,7 @@
             <div class="navbar">
                 <div class="navbar-inner">
                   <div class="center">Add Class</div>
-                  <div class="right"><a href="#" class="close-popup"><i class="fa fa-check" style="color:white;"></i></a></div> <!-- Once the user clicks the checkmark, it will save their created page settings -->
+                  <div class="right"><i pro-click="pro.course.addCourse" class="fa fa-check" style="color:white;"></i></div> <!-- Once the user clicks the checkmark, it will save their created page settings -->
                 </div>
             </div>
             <div class="page" data-page="my-page">
@@ -271,7 +269,7 @@
                           <div class="item-inner">
                             <div class="item-title label" style="font-weight:bold;">Course Name</div>
                             <div class="item-input">
-                              <input type="text" placeholder="ECON 1401">
+                              <input type="text" name="courseName" placeholder="ECON 1401">
                             </div>
                           </div>
                         </div>
