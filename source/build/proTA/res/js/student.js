@@ -12,8 +12,6 @@ class Student {
 
 }
 
-
 //instance of Student class
-let Student1 = new Student("James Taylor");
-
-Student1.checkIn("11-14-17");
+//let Student1 = new Student("James Taylor");
+//Student1.checkIn("11-14-17");

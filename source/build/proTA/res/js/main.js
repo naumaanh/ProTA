@@ -109,20 +109,25 @@ var pro = {
 	teacher: {
 		
 		addClass: function(newClass){
-			this.classes.push(newclass);
-
-			//print teacher1's classes
-			console.log(Teacher1.classes);
-		}
+			this.classes.push(newClass);
+		},
+		
+		addGrades: function(){
+			console.log("grades added");
+		},
 		//,
-		
-		
 		//getClasses: function(){	
 		//}
 	},
 	
 	//student class
 	student: {
+		
+		checkIn: function(date){
+			//push date into student checkin array	
+		}
+		
+		
 		
 	}
 	
