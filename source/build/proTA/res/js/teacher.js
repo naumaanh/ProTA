@@ -25,7 +25,6 @@ class Teacher {
 	}
 }
 
-
 //instance of Student class
 let Teacher1 = new Teacher("Mr. Price");
 

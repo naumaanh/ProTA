@@ -76,6 +76,10 @@ var pro = {
 		console.log( 'Exeption unhandled function', $(this), funcName );
 	},
 
+	
+	
+	
+	
   openPage: function( id ){
     id = id ? id : this.attr('page-id');
     mainView.router.loadContent( pro.$view.find(id).html() );
@@ -96,4 +100,32 @@ var pro = {
       searchIn: '.item-title'
     });
   },
+	
+	
+	
+	
+	
+	//teacher class
+	teacher: {
+		
+		addClass: function(newClass){
+			this.classes.push(newclass);
+
+			//print teacher1's classes
+			console.log(Teacher1.classes);
+		}
+		//,
+		
+		
+		//getClasses: function(){	
+		//}
+	},
+	
+	//student class
+	student: {
+		
+	}
+	
+	
+	
 };
