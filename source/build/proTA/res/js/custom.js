@@ -1,5 +1,5 @@
 // document ready event occurs after the DOM has been loaded making it a great place to have your jQuery
-$(document).ready(function(){ 
+$(document).ready(function(){
 
 	$(".icon-plus").click(function() {
 		console.log ( $(".class-add" ).val() );
