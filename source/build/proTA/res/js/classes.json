@@ -3,7 +3,6 @@ courses:[
 		"courseName": "CSCE 4900",
 		"courseTime": "10:30 AM",
 		attendedStudents: [],
-		totalStudents: 5,
 		daysOfWeek: ["Monday", "Wednesday"]
 	},
 	
