@@ -323,7 +323,10 @@
             <div class="navbar">
                 <div class="navbar-inner">
                   <div class="center">Add Class</div>
-                  <div class="right"><i pro-click="pro.course.addCourse" class="fa fa-check" style="color:white;"></i></div> <!-- Once the user clicks the checkmark, it will save their created page settings -->
+                  <div class="right">
+                    <i pro-click="pro.closePopup('popup')" class="icon icon-close"></i>
+                    <i pro-click="pro.course.addCourse" class="fa fa-check" style="color:white;"></i>
+                  </div> <!-- Once the user clicks the checkmark, it will save their created page settings -->
                 </div>
             </div>
             <div class="page" data-page="my-page">

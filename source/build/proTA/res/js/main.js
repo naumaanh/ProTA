@@ -114,11 +114,11 @@ var pro = {
       listItemTemplate: '<li></li>',
 
       addCourse: function( div ){
-        console.log('test');
         div = div ? div : this;
         var jsonObj = pro.toJSON( div );
         pro.course.courses.push( jsonObj );
         $('.page').data(pro.course.courses);
+				console.log (pro.course.courses);
       },
 
       listCourses: function(){
@@ -142,7 +142,8 @@ var pro = {
         var input = $(this);
         jsonObj[ input.attr('name') ] = input.val();
       });
-      pro.closePopup( $elem.closest('.popup') );
+			pro.closePopup( $elem.closest('.popup') );
+			pro.openPage( '#take-attendance' );
       return jsonObj;
     },
 
