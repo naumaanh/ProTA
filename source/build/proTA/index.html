@@ -32,7 +32,6 @@
       <script type='text/javascript' src='res/js/teacher.js'></script>
       <script type='text/javascript' src='res/js/student.js'></script>
       <script type='text/javascript' src='res/js/class.js'></script> <!-- This is a class js file -->
-      <script type='text/javascript' src='res/js/custom.js'></script>
 
   </head>
 
@@ -133,7 +132,7 @@
                   <div class="list-block media-list">
                     <ul>
                       <li>
-                        <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#class-template">
+                        <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#take-attendance">
                           <div class="item-inner">
                             <div class="item-title-row">
                               <div class="item-title">4444 CSCE</div>
@@ -172,7 +171,7 @@
                   <div class="list-block media-list">
                     <ul>
                       <li>
-                        <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#class-template">
+                        <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#take-attendance">
                           <div class="item-inner">
                             <div class="item-title-row">
                               <div class="item-title">4444 CSCE</div>
@@ -211,7 +210,7 @@
                   <div class="list-block media-list">
                     <ul>
                       <li>
-                        <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#class-template">
+                        <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#take-attendance">
                           <div class="item-inner">
                             <div class="item-title-row">
                               <div class="item-title">4444 CSCE</div>
@@ -246,6 +245,76 @@
           </div>
           </div>
           </div>
+          </div>
+        </script>
+
+        <script type="text/template" id="take-attendance">
+          <div class="page with attendance" data-page="class">
+            <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="center">Students</div>
+                  <div class="right"><i class="icon icon-close" pro-click="pro.closePage"></i></div>
+                </div>
+            </div>
+            <div class="page-content">
+            <div class="list-block">
+              <ul>
+                <li>
+                  <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#student-analytics">
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Keenan Jabri</div>
+                      </div>
+                      <div class="item-subtitle">ID: 123456</div>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#student-analytics">
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">Nicolas Stencel</div>
+                      </div>
+                      <div class="item-subtitle">ID: 654321</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </script>
+
+        <script type="text/template" id="student-analytics">
+          <div class="page student-analytics" data-page="analytics"> <!-- To get the page to load you must set the class to page -->
+            <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="center">Keenan Jabri</div>
+                  <div class="right"><i class="icon icon-close" pro-click="pro.closePage"></i></div> <!-- Once the user clicks the checkmark, it will save their created page settings -->
+                </div>
+            </div>
+
+            <div class="page-content">
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-title-row">
+                        <div class="item-title">Favorite Teacher: <i>Robert Renka</i></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-title-row">
+                        <div class="item-title">Favorite Subject: <i>Big O Run Time Induction</i></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </script>
 
