@@ -118,7 +118,7 @@ var pro = {
         var jsonObj = pro.toJSON( div );
         pro.course.courses.push( jsonObj );
         $('.page').data(pro.course.courses);
-				console.log (pro.course.courses);
+				localStorage.setItem( "courses", JSON.stringify( jsonObj ) );
       },
 
       listCourses: function(){
@@ -142,6 +142,10 @@ var pro = {
         var input = $(this);
         jsonObj[ input.attr('name') ] = input.val();
       });
+			var d = new Date();
+			var h = d.getHours();
+			var m = d.getMinutes();
+			jsonObj[ "time" ] = ( ( h < 10 ? "0" : '' ) +  h + ":" + ( m < 10 ? "0" : '' ) + m );
 			pro.closePopup( $elem.closest('.popup') );
 			pro.openPage( '#take-attendance' );
       return jsonObj;
