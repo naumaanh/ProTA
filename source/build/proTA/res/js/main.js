@@ -124,6 +124,7 @@ var pro = {
 		listCourses: function(){
 			var page = this;
 			var jsonObj = page.data();
+			console.log(jsonObj);
 			$.each( jsonObj, function(){
 				page.append( pro.course.listItem( this ) );
 			});
