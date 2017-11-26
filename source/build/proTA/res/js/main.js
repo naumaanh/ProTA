@@ -94,9 +94,9 @@ var pro = {
 		myApp.popup( pro.$view.find(id).html() );
 	},
 
-  closePopup: function( popup ){
-    myApp.closeModal( popup );
-  },
+	closePopup: function( popup ){
+		myApp.closeModal( popup );
+	},
 
 	initSearchBar: function(){
 		var mySearchbar = myApp.searchbar('.searchbar', {
@@ -109,47 +109,54 @@ var pro = {
 
 
 	//course class
-  course: {
-      courses: [],
-      listItemTemplate: '<li></li>',
+	course: {
+		courses: [],
+		listItemTemplate: '<li></li>',
 
-      addCourse: function( div ){
-        div = div ? div : this;
-        var jsonObj = pro.toJSON( div );
-        pro.course.courses.push( jsonObj );
-        $('.page').data(pro.course.courses);
-				localStorage.setItem( "courses", JSON.stringify( jsonObj ) );
-      },
+		addCourse: function( div ){
+			div = div ? div : this;
+			var jsonObj = pro.toJSON( div );
+			pro.course.courses.push( jsonObj );
+			$('.page').data(pro.course.courses);
+			localStorage.setItem( "courses", JSON.stringify( jsonObj ) );
+		},
 
-      listCourses: function(){
-        var page = this;
-        var jsonObj = page.data();
-        $.each( jsonObj, function(){
-          page.append( pro.course.listItem( this ) );
-        });
-      },
+		listCourses: function(){
+			var page = this;
+			var jsonObj = page.data();
+			$.each( jsonObj, function(){
+				page.append( pro.course.listItem( this ) );
+			});
+		},
 
-      listItem: function( $elem ){
-        return $(this.listItemTemplate).clone().text( $elem.courseName ).data( $elem.courseInstances );
-      },
+		listItem: function( $elem ){
+			return $(this.listItemTemplate).clone().text( $elem.courseName ).data( $elem.courseInstances );
+		},
 
-    },
+	},
 
-    toJSON: function( $elem ){
-      var inputs = $elem.closest('.popup').find('input');
-      var jsonObj = {};
-      inputs.each( function(){
-        var input = $(this);
-        jsonObj[ input.attr('name') ] = input.val();
-      });
-			var d = new Date();
-			var h = d.getHours();
-			var m = d.getMinutes();
-			jsonObj[ "time" ] = ( ( h < 10 ? "0" : '' ) +  h + ":" + ( m < 10 ? "0" : '' ) + m );
-			pro.closePopup( $elem.closest('.popup') );
-			pro.openPage( '#take-attendance' );
-      return jsonObj;
-    },
+	toJSON: function( $elem ){
+		var inputs = $elem.closest('.popup').find('input');
+		
+		//console.log("inputs: "+ inputs);
+		var jsonObj = {};
+		inputs.each( function(){
+			var input = $(this);
+			//console.log("input val: "+ input.val());
+			jsonObj[ input.attr('name') ] = input.val();
+		});
+		var d = new Date();
+		var h = d.getHours();
+		var m = d.getMinutes();
+		jsonObj[ "time" ] = ( ( h < 10 ? "0" : '' ) +  h + ":" + ( m < 10 ? "0" : '' ) + m );
+		pro.closePopup( $elem.closest('.popup') );
+		pro.openPage( '#take-attendance' );
+		
+		console.log(jsonObj);
+		
+		return jsonObj;
+	
+	},
 
 	//student class
 	student: {

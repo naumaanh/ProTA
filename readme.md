@@ -1,9 +1,9 @@
 <!-- using shields.io for status buttons -->
-![Programming Language](https://img.shields.io/badge/Language-Javascript-blue.svg)
-![Status](https://img.shields.io/badge/Version-0.2.86-brightgreen.svg)
+![Programming Language](https://img.shields.io/badge/Language-Javascript-red.svg)
+![Status](https://img.shields.io/badge/Version-0.2.9-brightgreen.svg)
 
+![](source/build/proTA/res/icon/Android/android/mipmap-xhdpi/ic_launcher.png)
 
-# Pro TA
 University of North Texas, CSCE 4444 Software Engineering Group Project
 
 ### Members
@@ -29,7 +29,7 @@ In our main directory there are three text files and two folders. **`/documents`
 
 #### November
 - [x] Code Inspection 11/13
-- [ ] Deliverable III - Implenting & Testing 11/27 (**20% of final grade**)
+- [ ] Deliverable III - Implementing & Testing 11/27 (**20% of final grade**)
 - [ ] Project Presentation & Demo 11/28 & 11/30
 
 #### December
