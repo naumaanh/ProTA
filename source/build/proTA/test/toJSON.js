@@ -1,4 +1,5 @@
 //converts html input box text into a JSON object
+//since a lot of our functions combine interactions with the DOM, i've commented out those sections for testing purposes.
 function toJSON(inputs) {
 	//var inputs = $elem.closest('.popup').find('input');
 

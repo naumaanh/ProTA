@@ -137,7 +137,7 @@ var pro = {
 
 	toJSON: function( $elem ){
 		var inputs = $elem.closest('.popup').find('input');
-		
+
 		//console.log("inputs: "+ inputs);
 		var jsonObj = {};
 		inputs.each( function(){
@@ -151,11 +151,11 @@ var pro = {
 		jsonObj[ "time" ] = ( ( h < 10 ? "0" : '' ) +  h + ":" + ( m < 10 ? "0" : '' ) + m );
 		pro.closePopup( $elem.closest('.popup') );
 		pro.openPage( '#take-attendance' );
-		
+
 		console.log(jsonObj);
-		
+
 		return jsonObj;
-	
+
 	},
 
 	//student class
