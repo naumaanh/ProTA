@@ -1,7 +1,5 @@
 const addStudent = require('./addStudent');
 
-test('adds course object to course array', () => {
-	expect(addStudent("James", 456852))
-		.toEqual({
-		'name':'James','id': 456852});
+test('adds student to courses and returns object', () => {
+	expect(addStudent("James", 456852)).toEqual({'name':'James','id': 456852});
 });
