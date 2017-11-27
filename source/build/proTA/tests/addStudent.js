@@ -1,12 +1,12 @@
 //pushes new course into courses array
-function addCourse(courseName) {
+function addStudent(student,id) {
 	
-	let tempclass = []
+	let course = [];
 	
-	tempclass.push(courseName);
+	course.push(courseName);
 	//pro.course.courses.push( jsonObj );
 	//return number of classes, should be equal to previous amount of classes plus 1?
 	
 	return tempclass;
 }
-module.exports = addCourse;
+module.exports = addStudent;

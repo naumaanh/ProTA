@@ -116,6 +116,8 @@ var pro = {
 		addCourse: function( div ){
 			div = div ? div : this;
 			var jsonObj = pro.toJSON( div );
+			console.log(jsonObj);
+			
 			pro.course.courses.push( jsonObj );
 			$('.page').data(pro.course.courses);
 			localStorage.setItem( "courses", JSON.stringify( jsonObj ) );
@@ -124,7 +126,8 @@ var pro = {
 		listCourses: function(){
 			var page = this;
 			var jsonObj = page.data();
-			console.log(jsonObj);
+			
+			//console.log(jsonObj);
 			$.each( jsonObj, function(){
 				page.append( pro.course.listItem( this ) );
 			});
@@ -153,10 +156,9 @@ var pro = {
 		pro.closePopup( $elem.closest('.popup') );
 		pro.openPage( '#take-attendance' );
 
-		console.log(jsonObj);
+		//console.log(jsonObj);
 
 		return jsonObj;
-
 	},
 
 	//student class
