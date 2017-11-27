@@ -117,7 +117,7 @@ var pro = {
 			div = div ? div : this;
 			var jsonObj = pro.toJSON( div );
 			console.log(jsonObj);
-			
+
 			pro.course.courses.push( jsonObj );
 			$('.page').data(pro.course.courses);
 			localStorage.setItem( "courses", JSON.stringify( jsonObj ) );
@@ -126,7 +126,7 @@ var pro = {
 		listCourses: function(){
 			var page = this;
 			var jsonObj = page.data();
-			
+
 			//console.log(jsonObj);
 			$.each( jsonObj, function(){
 				page.append( pro.course.listItem( this ) );
@@ -152,7 +152,33 @@ var pro = {
 		var d = new Date();
 		var h = d.getHours();
 		var m = d.getMinutes();
+		var day = d.getDay();
 		jsonObj[ "time" ] = ( ( h < 10 ? "0" : '' ) +  h + ":" + ( m < 10 ? "0" : '' ) + m );
+		switch (day) {
+			case 0:
+				jsonObj[ "day" ] = "Sunday";
+				break;
+			case 1:
+				jsonObj[ "day" ] = "Monday";
+				break;
+			case 2:
+				jsonObj[ "day" ] = "Tuesday";
+				break;
+			case 3:
+				jsonObj[ "day" ] = "Wedensday";
+				break;
+			case 4:
+				jsonObj[ "day" ] = "Thursday";
+				break;
+			case 5:
+				jsonObj[ "day" ] = "Friday";
+				break;
+			case 6:
+				jsonObj[ "day" ] = "Saturday";
+				break;
+			default:
+				jsonObj[ "day" ] = "Nothing";
+		}
 		pro.closePopup( $elem.closest('.popup') );
 		pro.openPage( '#take-attendance' );
 
