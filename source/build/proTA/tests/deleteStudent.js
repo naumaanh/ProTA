@@ -1,16 +1,20 @@
 //pushes new course into courses array
 function deleteStudent(student,id) {
 	
-	let course = [{'name':'James','id': "456852"}];
+	var courses = [{'name':"James",'id': "456852"}];
+	var i = 0;
 	
-	courses.forEach(function(){
+	courses.forEach(function(student_in_course){
 		
+		//console.log(student_in_course.name);
+		
+		if(student_in_course.id == id){	//check student ID
+				courses.splice(i,1);
+		}
+		
+		i++;	//remove at the correct index
 	});
 	
-	
-	course.push(studentObj);
-	//pro.course.courses.push( jsonObj );
-	//return number of classes, should be equal to previous amount of classes plus 1?
-	return course;
+	return courses;
 }
-module.exports = addStudent;
+module.exports = deleteStudent;

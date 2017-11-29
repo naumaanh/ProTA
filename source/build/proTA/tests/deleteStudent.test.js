@@ -1,5 +1,5 @@
-const deleteStudent = require('./addStudent');
+const deleteStudent = require('./deleteStudent');
 
-test('adds student to courses and returns object', () => {
+test('deleted specific student from course and returns class', () => {
 	expect(deleteStudent("James", 456852)).toEqual([]);
 });
