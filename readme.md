@@ -29,8 +29,8 @@ In our main directory there are three text files and two folders. **`/documents`
 
 #### November
 - [x] Code Inspection 11/13
-- [ ] Deliverable III - Implementing & Testing 11/27 (**20% of final grade**)
-- [ ] Project Presentation & Demo 11/28 & 11/30
+- [x] Deliverable III - Implementing & Testing 11/27 (**20% of final grade**)
+- [x] Project Presentation & Demo 11/28 & 11/30
 
 #### December
 - [ ] Usability Testing 12/5
