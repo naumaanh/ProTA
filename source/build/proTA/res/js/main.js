@@ -7,6 +7,7 @@ var pro = {
 		pro.initF7();
 		pro.loadView();
 		pro.initSearchBar();
+		pro.refreshAutoInit( $('.page') );
 	},
 
 	initF7: function(){
@@ -40,7 +41,7 @@ var pro = {
 		});
 		$$(document).on('pageInit', function (e) {
 			var page = e.detail.page;
-			pro.refreshAutoInit(page);
+			pro.refreshAutoInit(  $(page.container) );
 		});
 	},
 
@@ -49,6 +50,7 @@ var pro = {
 		autoInit = activeTab.attr('auto-init') ? autoInit.add( activeTab ) : autoInit;
 		autoInit.each( function(){
 			$elem = $(this);
+			console.log('test', $elem);
 			pro.methodCaller( $elem.attr('auto-init').replace('@', ''), $elem, prevElem );
 		});
 	},
@@ -111,7 +113,19 @@ var pro = {
 	//course class
 	course: {
 		courses: [],
-		listItemTemplate: '<li></li>',
+		listItemTemplate: '<li><a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#class-template"><div class="item-inner"><div class="item-title-row"><div class="item-title"></div></div><div class="item-subtitle"></div></div></a></li>',
+
+		courseInstanceInit: function(){
+			console.log('test111');
+		},
+
+		createInstances: function(){
+
+		},
+
+		loadInstances: function(){
+
+		},
 
 		addCourse: function( div ){
 			div = div ? div : this;
@@ -119,24 +133,43 @@ var pro = {
 			console.log(jsonObj);
 
 			pro.course.courses.push( jsonObj );
-			$('.page').data(pro.course.courses);
-			localStorage.setItem( "courses", JSON.stringify( jsonObj ) );
+			$('.page-on-center').data(pro.course.courses);
+			var ls = localStorage.length ? JSON.parse( localStorage.getItem("courses")) : [];
+			ls.push( jsonObj )
+			localStorage.setItem( "courses", JSON.stringify(ls) );
+			console.log( JSON.parse( localStorage.getItem("courses") ) );
+			$('.page #class-list').empty();
+			pro.course.listCourses.call( $('.page #class-list') );
 		},
 
 		listCourses: function(){
 			var page = this;
-			var jsonObj = page.data();
-
-			//console.log(jsonObj);
+			var jsonObj = JSON.parse( localStorage.getItem("courses") );
 			$.each( jsonObj, function(){
 				page.append( pro.course.listItem( this ) );
 			});
 		},
 
 		listItem: function( $elem ){
-			return $(this.listItemTemplate).clone().text( $elem.courseName ).data( $elem.courseInstances );
+			var temp = $(this.listItemTemplate).clone();
+			temp.find('.item-title').text( $elem.courseName );
+			temp.data( $elem );
+			return temp;
 		},
 
+		load: function( ){
+			var page = $('.page').find('#class-list');
+			if (!localStorage.courses) {
+					page.after('<bold>There is nothing here</bold>')
+			} else {
+					var course = JSON.parse(localStorage.getItem("courses"));
+					var classList = '';
+					for (var i = 0; i < localStorage.length; i++) {
+							classList += '<li><a href="#" class="item-link item-content" pro-click="pro.openPage" page-id="#class-template"><div class="item-inner"><div class="item-title-row"><div class="item-title">' + course.courseName + '</div></div><div class="item-subtitle">' + course.time + '</div></div></a></li>';
+					}
+					page.append(classList);
+			}
+		}
 	},
 
 	toJSON: function( $elem ){
@@ -149,6 +182,7 @@ var pro = {
 			//console.log("input val: "+ input.val());
 			jsonObj[ input.attr('name') ] = input.val();
 		});
+		jsonObj['courseInstance'] = [];
 		var d = new Date();
 		var h = d.getHours();
 		var m = d.getMinutes();
