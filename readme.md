@@ -1,6 +1,6 @@
 <!-- using shields.io for status buttons -->
 ![Programming Language](https://img.shields.io/badge/Language-Javascript-red.svg)
-![Status](https://img.shields.io/badge/Version-0.2.9-brightgreen.svg)
+![Status](https://img.shields.io/badge/Deliverable-3-brightgreen.svg)
 
 ![](source/build/proTA/res/icon/Android/android/mipmap-xhdpi/ic_launcher.png)
 
