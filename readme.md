@@ -33,4 +33,4 @@ In our main directory there are three text files and two folders. **`/documents`
 - [x] Project Presentation & Demo 11/28 & 11/30
 
 #### December
-- [ ] Usability Testing 12/5
+- [x] Usability Testing 12/5
